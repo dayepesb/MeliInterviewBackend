@@ -1,0 +1,31 @@
+{
+  "name": "meliinterviewbackend",
+  "version": "1.0.0",
+  "description": "Meli Interview Api",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "server": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dayepesb/MeliInterviewBackend.git"
+  },
+  "author": "David Yepes Buitrago",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dayepesb/MeliInterviewBackend/issues"
+  },
+  "homepage": "https://github.com/dayepesb/MeliInterviewBackend#readme",
+  "dependencies": {
+    "body-parser": "^1.19.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15",
+    "request": "^2.88.2"
+  }
+}
