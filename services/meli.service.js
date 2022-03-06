@@ -51,8 +51,8 @@ MeliIntegrator.prototype.doGetItemDetail = function (itemId) {
     });
 };
 
-MeliIntegrator.prototype.doGetProductDescription = function (itemId) {
-    const URI = process.env.API_DETAIL_ITEM_URL.replace('%ID%', itemId);
+MeliIntegrator.prototype.doGetItemDescription = function (itemId) {
+    const URI = process.env.API_DESCRIPTION_ITEM_URL.replace('%ID%', itemId);
     const url = `${URL_BASE}${URI}`;
     const options = { url };
 

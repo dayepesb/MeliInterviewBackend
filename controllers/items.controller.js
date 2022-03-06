@@ -50,8 +50,9 @@ const getDetailCtrl = async (req, res) => {
 
     const parseDetail = parseItemDetail(responseDetail);
 
-    const responseDescription = await apiMeli.doGetProductDescription(itemId);
+    const responseDescription = await apiMeli.doGetItemDescription(itemId);
 
+    console.log('!!!!!!!!!!!!!!!', responseDescription);
     if (responseDescription.error) {
         res.status(500);
         res.send({ error: responseDescription.error });

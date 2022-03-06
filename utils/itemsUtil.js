@@ -24,6 +24,7 @@ parseItems = function (items) {
             price,
             currency_id,
             shipping: { free_shipping },
+            address: { city_name }
         } = item;
 
         return {
@@ -36,7 +37,8 @@ parseItems = function (items) {
             },
             picture: thumbnail,
             condition,
-            free_shipping
+            free_shipping,
+            city_name,
         };
     });
 };
@@ -65,6 +67,7 @@ parseItemDetail = function (detail) {
         currency_id,
         price,
         thumbnail,
+        pictures,
         condition,
         shipping: { free_shipping },
         sold_quantity
@@ -80,7 +83,7 @@ parseItemDetail = function (detail) {
                 amount: price,
                 decimals: 0
             },
-            picture: thumbnail,
+            picture: pictures[0].url,
             condition,
             free_shipping,
             sold_quantity,
